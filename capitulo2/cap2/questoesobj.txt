@@ -1,0 +1,62 @@
+Questão 01
+a) 2
+
+b) Quando guarda 2.97 num int, ele simplesmente ignora e corta tudo que vem depois da vírgula e o nome é truncamento.
+
+c) Tem que declarar a variável como float ou double. E pra arredondar pode usar a função round() da biblioteca <math.h> ou usar casting explícito: (int)(valor + 0.5).
+
+
+Questão 02
+a) A biblioteca não faz parte do padrão ANSI C, o que faz com que o código não compile em sistemas modernos como Linux, macOS ou servidores de produção.  
+
+b) As funções padrão e portáveis ​​da <stdio.h> leitura de caracteres são getchar() e fgetc(stdin). Para saída, utilize-se putchar() e fputc()
+
+
+Questão 04
+Instrução 1
+Avalia o lado direito: b + c -> 2 + 3 = 5
+Atribui a = a + 5 -> 1 + 5 = 6
+a = 6, b = 2, c = 3, d = 4
+
+
+Instrução 2
+Avalia o lado direito: c = d + 2 -> 4 + 2 = 6
+Atribui b : b*= 6 -> 2 x 6 = 12
+ a = 6, b = 12, c = 6, d = 4
+
+Instrução 3
+Avalia o lado direito: a + a + a -> 6 + 6 + 6 = 18
+Aplica resto de divisão d = 4 % 18 -> 4
+a = 6, b = 12, c = 6, d = 4
+
+Instrução 4
+Avaliar a atribuição b-= a -> 12 - 6 = 6
+Subconj centro c - b -> 6 - 6 = 0
+Atribui d : d -= 0 -> 4 - 0 = 4
+a = 6, b = 6, c = 6, d = 4
+
+*Valores finais* a = 6, b = 6, c = 6, d = 4.
+
+Instrução 5
+Erro de compilação, não pode receber atribuição pq da rvalue
+
+
+Questão 05
+a) 1
+b) 0
+c) 0
+d) 0
+e) 1
+f) 1
+g) 1
+h) 1
+i) 0
+j) 0
+
+Questão 06
+a) No trecho A, primeiro incremente n e depois atribui x
+Printa n = 6 e x = 6
+No trecho B, primeiro atribui o valor de m a y e depois incrementa m 
+Printa m = 6 e y = 5
+
+b) Modificar a mesma variável várias vezes no mesmo printf() gera comportamento indefinido, O C não garante a ordem em que os argumentos serão processados, gerando resultados imprevisíveis dependendo do compilador.
